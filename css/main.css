@@ -98,6 +98,145 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*----------------- BASE HEADER - FOOTER STYLES ------------------------------*/
+
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.hero-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features .features-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+  
+
+.mission{
+  /* THIS CLASS IS IN ABOUT HTML, SAME CSS FOR MULTIPLE PAGES??? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+.contact-section{
+  /* THIS SECTION WAS ADDED TO KEEP IN LINE WITH SKILLCRUSH, THIS SECTION OR ANOTHER DIV MAY BECOME REDUNDANT, KEEP A LOOK OUT */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq{
+  /* THIS CLASS IS IN FAQ HTML, SAME CSS FOR MULTIPLE PAGES??? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper{
+  /* THIS CLASS IS IN FAQ HTML, SAME CSS FOR MULTIPLE PAGES??? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /* WHY THIS DIV? HOW IS THIS DIFFERENT FROM JUST FAQ? */
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
