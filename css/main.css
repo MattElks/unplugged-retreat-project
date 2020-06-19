@@ -113,28 +113,79 @@ header .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider{
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 60%;
 }
 
 header nav ul{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
+
+footer{
+  flex-direction: column;
+}
+
+footer p{
+  margin: 0;
+}
+
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact{
+  margin-bottom: 50px;
+}
+
+footer .social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright{
+  margin: 20px 0;
+}
+
+
+
+
+
+/*--------------------------------- MOBILE STYLES - HOMEPAGE ----------------------------*/
+
+
+
+/*-- HERO AREA ---*/
 
 .hero-area{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
+
+/*-- ASIDE --*/
 
 aside{
   display: flex;
@@ -143,11 +194,21 @@ aside{
   flex-flow: row wrap;
 }
 
+/*-- FEATURES --*/
+
 .features{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+}
+
+.features h3{
+  margin-bottom: 60px;
+}
+
+.features article{
+  width: 54%;             /* Solution is width: 63%; */
+  margin-bottom: 60px;    /* Solution is margin: 30px 0; */
 }
 
 .features .features-items{
@@ -157,22 +218,38 @@ aside{
   flex-flow: row wrap;
 }
 
+.features p{
+  margin: 0;
+
+}
+
+/*-- REVIEWS --*/
+
 .reviews{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
-  
+
+.reviews h3{                  
+  margin-bottom: 40px;
+}
+
+.reviews h4{
+  width: 55%;
+  margin: 20px 0;
+
+}
+
+  /*------------------- MOBILE STYLE - ABOUT PAGE -----------------------*/
+
 
 .mission{
-  /* THIS CLASS IS IN ABOUT HTML, SAME CSS FOR MULTIPLE PAGES??? */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
 
 
 .contact-section{
@@ -183,8 +260,15 @@ aside{
   flex-flow: row wrap;
 }
 
+.contact-section p{
+  margin: 0;
+}
+
+/*---------------------- MOBILE STYLES - FAQ PAGE --------------------*/
+
+
+
 .faq{
-  /* THIS CLASS IS IN FAQ HTML, SAME CSS FOR MULTIPLE PAGES??? */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,32 +276,35 @@ aside{
 }
 
 .faq .content-wrapper{
-  /* THIS CLASS IS IN FAQ HTML, SAME CSS FOR MULTIPLE PAGES??? */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* WHY THIS DIV? HOW IS THIS DIFFERENT FROM JUST FAQ? */
+  margin: 50px 0 0 0;
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.faq h3{
+  margin-bottom: 40px;
 }
 
-footer .social{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.faq-content{
+  margin-bottom: 50px;
 }
 
-footer .social-icons{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
+
+
+
+
+
+ /*LOOK AT SOLUTION CODE. WHAT WIDTHS AND PERCENTAGES ARE USED?? WHAT IS LEFT OUT?
+  ADD WIDTHS AND PERCENTAGES TO SEE IF THERE IS A DIFFERENCE*/
+
+
+
+
+
+
 
 
 
