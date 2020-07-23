@@ -98,16 +98,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+.content-wrapper{
+  width: 90%;
+  margin: 50px 0;
+}
 /*----------------- BASE HEADER - FOOTER STYLES ------------------------------*/
 
 
-header{
+header,
+footer{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+header{
+  padding: 15px 0; 
+}
 header .content-wrapper{
   display: flex;
   justify-content: center;
@@ -149,7 +158,7 @@ footer .content-wrapper{
   margin: 50px 0;
 }
 
-footer .contact{
+footer .contact{ 
   margin-bottom: 50px;
 }
 
@@ -202,7 +211,7 @@ aside{
   flex-flow: row wrap;
 }
 
-.features h3{
+.features h2{
   margin-bottom: 60px;
 }
 
@@ -231,7 +240,7 @@ aside{
   flex-flow: row wrap;
 }
 
-.reviews h3{                  
+.reviews h2{                  
   margin-bottom: 40px;
 }
 
@@ -290,36 +299,6 @@ aside{
 .faq-content{
   margin-bottom: 50px;
 }
-
-
-
-
-
-
-
- /*LOOK AT SOLUTION CODE. WHAT WIDTHS AND PERCENTAGES ARE USED?? WHAT IS LEFT OUT?
-  ADD WIDTHS AND PERCENTAGES TO SEE IF THERE IS A DIFFERENCE*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -413,9 +392,193 @@ aside{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+
+  /*--------------- GENERAL STYLES --------------------*/
+
+
+  .content-wrapper{
+    max-width: 640px;  /*Why is a max-width given??*/
+    margin: 100px 0;
+  }
+
+  /*--------------- HEADER ---------------------*/
+
+  header{
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper{
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+
+  header nav{
+    width: 20%;
+
+  }
+
+  header nav ul{
+    justify-content: space-between;
+  }
+
+  .header-divider{
+    display: none;
+  }
+
+  /*------------ HERO AREA -------------*/
+
+  /*------------ ASIDE -----------------*/
+
+  aside .content-wrapper{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    width: 40%;
+    margin: 0%;
+  }
+
+  /*------------- FEATURES --------------*/
+
+  .features article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 50%;
+  }
+
+  .features .features-item-description{
+    width: 50%;
+  }
+
+  /*------------- REVIEWS ----------------*/
+
+  .reviews article{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div{
+    width: 49%;
+  }
+
+  /*------------- FOOTER -----------------*/
+
+  footer .content-wrapper{
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .contact{
+    margin-bottom: 0;
+  }
+
+  footer .copyright{
+    width: 100%;
+  }
+
+
+/*=================================================
+                  ABOUT PAGE  
+===================================================*/
+
+/*------------------ MAIN -------------------------*/
+
+
+.mission-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+
 }
+
+.mission-content p{
+  width: 42%;
+}
+
+/*------------------ CONTACT INFO ------------------*/
+
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+.contact-section .content-wrapper h2{
+  width:79%;
+}
+
+
+/*==================================================
+              FAQ PAGE
+===================================================*/
+
+.faq .content-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.faq-content{
+  flex-basis: 40%;      
+
+}
+
+.faq h2{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.faq-content h3{
+  margin-bottom: 20px;
+}
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
