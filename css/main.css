@@ -156,6 +156,7 @@ footer p{
 footer .content-wrapper{
   width: 55%;
   margin: 50px 0;
+
 }
 
 footer .contact{ 
@@ -177,6 +178,7 @@ footer .social-icons p{
 footer .copyright{
   margin: 20px 0;
 }
+
 
 
 
@@ -250,6 +252,11 @@ aside{
 
 }
 
+.copyright{
+  display: flex;
+  justify-content: center;
+}
+
   /*------------------- MOBILE STYLE - ABOUT PAGE -----------------------*/
 
 
@@ -262,7 +269,6 @@ aside{
 
 
 .contact-section{
-  /* THIS SECTION WAS ADDED TO KEEP IN LINE WITH SKILLCRUSH, THIS SECTION OR ANOTHER DIV MAY BECOME REDUNDANT, KEEP A LOOK OUT */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,14 +398,24 @@ aside{
    Modify as content requires.
    ========================================================================== */
 
+
+
+
+/*--------------------- TABLET STYLES --------------------------------------*/
+
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
+
+
+/*=========================================
+            HOME PAGE 
+==========================================*/
 
   /*--------------- GENERAL STYLES --------------------*/
 
 
   .content-wrapper{
-    max-width: 640px;  /*Why is a max-width given??*/
+    max-width: 640px;  
     margin: 100px 0;
   }
 
@@ -478,10 +494,9 @@ aside{
     margin: 100px 0;
   }
 
-  .footer-content{
+  footer .content-wrapper .footer-content{
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 
   footer .contact{
@@ -548,18 +563,107 @@ aside{
 
 .faq-content h3{
   margin-bottom: 20px;
+}  
+
+
 }
 
+/*---------------- DESKTOP STYLES --------------------*/
 
-
-
-}
-
-
-
-@media only screen and (min-width: 1200px) {
+ @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
+ /*---------- GENERAL STYLES ----------------*/
+
+ .content-wrapper{
+  max-width: 960px; 
+  margin: 100px 0;
+ }
+
+ /*===========================================
+             HOMEPAGE
+ ============================================*/
+ 
+ /*---------- HERO -------------------------*/
+ 
+ .hero-area h1{
+   width: 69%;
+ }
+
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form{
+   width: 33%;
+ }
+ /*---------- ASIDE ------------------------*/
+
+ aside .content-wrapper{
+   display: flex;
+   justify-content: space-around;
+ }
+
+ /*----------- FEATURES --------------------*/
+
+ .features h2{
+   width: 92%;
+ }
+
+ .features .features-items article{
+   flex-basis: 205px;
+   margin: 0 60px 60px 0;
+ }
+
+ /*----------- REVIEWS ---------------------*/
+
+ .reviews article div{
+   width: 44%;
+ }
+
+
+
+
+/*==========================================
+             ABOUT PAGE
+===========================================*/
+
+/*------------- MISSION --------------------*/
+
+.mission-content h2{
+  width: 92%;
 }
+
+.mission-content p{
+  flex-basis: 445px;
+}
+
+/*-------------- CONTACT -------------------*/
+
+.contact-section .content-wrapper h2{
+  width: 97%;
+}
+
+.contact-content{
+  justify-content: space-around;
+}
+
+.contact-section .content-wrapper .contact-content div{
+  flex-basis: 320px;
+}
+}
+
+/*=============================================
+             FAQ PAGE
+===============================================*/
+
+/*--------- FAQ --------------------------------*/
+
+.faq h2{
+  width: 100%;
+}
+
+.faq .faq-content{
+  flex-basis: 431px;
+}
+
 
 
 
