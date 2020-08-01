@@ -103,6 +103,64 @@ textarea {
   width: 90%;
   margin: 50px 0;
 }
+
+/*---------- GLOBAL STYLES ------------------*/
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  /*-- text-align: left; --*/
+}
+
+ul, ol{
+ list-style-type: none;
+
+}
+
+a{
+ color: #e2e3ed;
+ text-decoration: none;
+}
+
+h2{
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.875em;
+}
+
+h3, h4{
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.125em;
+}
+
+p{
+ font-size: 0.875em;             
+}
+
+img{            /*------ Skillcrush added this ---------*/
+
+}
+
+figure{         /*------ Skillcrush added this --------*/
+
+}
+
+address{
+  font-family: 'Open Sans, sans-serif';
+}
+
+.content-wrapper{
+  width:90%;
+  margin: 50px 0;
+
+}
+
+
+
 /*----------------- BASE HEADER - FOOTER STYLES ------------------------------*/
 
 
@@ -663,6 +721,8 @@ aside{
 .faq .faq-content{
   flex-basis: 431px;
 }
+
+
 
 
 
