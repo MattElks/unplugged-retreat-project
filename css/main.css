@@ -99,12 +99,12 @@ textarea {
    ========================================================================== */
 
 
+/*---------- GLOBAL STYLES ------------------*/   
+
 .content-wrapper{
   width: 90%;
   margin: 50px 0;
 }
-
-/*---------- GLOBAL STYLES ------------------*/
 
 html{
   font-size: 16px;
@@ -122,23 +122,21 @@ ul, ol{
 
 }
 
-a{
- color: #e2e3ed;
- text-decoration: none;
-}
-
 h2{
  font-family: 'Poppins', sans-serif;
  font-size: 1.875em;
+ color: #e2e3ed;
 }
 
 h3, h4{
  font-family: 'Poppins', sans-serif;
  font-size: 1.125em;
+ color: #e2e3ed;
 }
 
 p{
- font-size: 0.875em;             
+ font-size: 0.875em; 
+ color: #e2e3ed;            
 }
 
 img{            /*------ Skillcrush added this ---------*/
@@ -164,6 +162,8 @@ address{
 /*----------------- BASE HEADER - FOOTER STYLES ------------------------------*/
 
 
+/*------- HEADER --------*/
+
 header,
 footer{
   display: flex;
@@ -174,7 +174,9 @@ footer{
 
 header{
   padding: 15px 0; 
+  background-color: #202322;
 }
+
 header .content-wrapper{
   display: flex;
   justify-content: center;
@@ -187,11 +189,14 @@ header .content-wrapper{
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav{
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
   width: 60%;
 }
 
@@ -202,6 +207,22 @@ header nav ul{
   flex-flow: row wrap;
   width: 100%;
 }
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+a{
+  color: #e2e3ed;              
+  text-decoration: none;
+  font-size: 1.125em;
+  font-weight: bold;
+ }
+
+
+
+/*----- FOOTER ---------*/
+
 
 footer{
   flex-direction: column;
@@ -237,10 +258,22 @@ footer .copyright{
   margin: 20px 0;
 }
 
+footer{
+  background-color: #202322;
+}
 
+.footer-content{
+  text-align: center;
+}
 
+footer .contact p{
+  font-family: 'Open-sans', sans-serif;
+}
 
-
+.copyright{
+  display: flex;
+  justify-content: center;
+}
 
 /*--------------------------------- MOBILE STYLES - HOMEPAGE ----------------------------*/
 
@@ -254,6 +287,13 @@ footer .copyright{
   flex-flow: row wrap;
 }
 
+.hero-area h1{
+  color: #e2e3ed;
+  font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
 /*-- ASIDE --*/
 
 aside{
@@ -263,16 +303,43 @@ aside{
   flex-flow: row wrap;
 }
 
+aside .form{
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+aside{
+  background-color: #527158;
+}
+
 /*-- FEATURES --*/
 
 .features{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.features h2{
-  margin-bottom: 60px;
 }
 
 .features article{
@@ -285,6 +352,11 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features h2{
+  margin-bottom: 60px;
+  font-weight: normal;
 }
 
 .features p{
@@ -300,8 +372,17 @@ aside{
   flex-flow: row wrap;
 }
 
+.reviews{
+  background-color: #2a423a;
+}
+
+.reviews h2, h3{
+  font-weight: normal;
+}
+
 .reviews h2{                  
   margin-bottom: 40px;
+  line-height: 1;      /* add to notes, line heights for all text along with font size*/
 }
 
 .reviews h4{
@@ -310,19 +391,23 @@ aside{
 
 }
 
-.copyright{
-  display: flex;
-  justify-content: center;
-}
-
-  /*------------------- MOBILE STYLE - ABOUT PAGE -----------------------*/
-
+/*================================================
+           MOB STYLE - ABOUT PAGE
+=================================================*/
 
 .mission{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.mission{
+  background-color: #527158;
+}
+
+.mission h2{
+  font-weight: normal;
 }
 
 
@@ -333,12 +418,25 @@ aside{
   flex-flow: row wrap;
 }
 
+address{
+  font-style: normal;
+}
+
+.contact-section{
+  background-color: #2a423a;
+}
+
+.contact-section h2{
+  font-weight: normal;
+}
+
 .contact-section p{
   margin: 0;
 }
 
-/*---------------------- MOBILE STYLES - FAQ PAGE --------------------*/
-
+/*==========================================
+        MOB STYLE - FAQ PAGE
+===========================================*/
 
 
 .faq{
@@ -356,15 +454,26 @@ aside{
   margin: 50px 0 0 0;
 }
 
-.faq h3{
-  margin-bottom: 40px;
-}
-
 .faq-content{
   margin-bottom: 50px;
 }
 
+.faq{
+  background-color: #527158;
+}
 
+.faq h2{
+  font-weight: normal;
+  line-height: 1;            /* make note on how to work out line height, put it in global styles if applicable. */ 
+  margin-bottom: 40px; 
+}
+
+.faq h3{
+  line-height: 1.333;
+  margin-bottom: 0;
+}
+
+/*---- line height in body of global styles then specific later */
 
 
 /* ==========================================================================
@@ -461,7 +570,7 @@ aside{
 
 /*--------------------- TABLET STYLES --------------------------------------*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
   /* Tablet styles here */
 
 
@@ -477,6 +586,18 @@ aside{
     margin: 100px 0;
   }
 
+  h2{
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3{
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+
+
   /*--------------- HEADER ---------------------*/
 
   header{
@@ -491,7 +612,7 @@ aside{
   }
 
   header nav{
-    width: 20%;
+    width: 30%; /*--- Skillcrush solution is width: 20% keep an eye out in upcoming solution --*/
 
   }
 
@@ -504,6 +625,11 @@ aside{
   }
 
   /*------------ HERO AREA -------------*/
+
+  .hero-area h1{
+    font-size: 3em;
+    line-height: 1;
+  } 
 
   /*------------ ASIDE -----------------*/
 
@@ -554,7 +680,7 @@ aside{
 
   footer .content-wrapper .footer-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   footer .contact{
@@ -590,9 +716,8 @@ aside{
 .contact-content{
   display: flex;
   justify-content: space-between;
-  align-items:center;
-}
 
+}
 
 .contact-section .content-wrapper h2{
   width:79%;
@@ -609,7 +734,7 @@ aside{
 
 }
 
-.faq-content{
+.faq .faq-content{
   flex-basis: 40%;      
 
 }
@@ -628,7 +753,7 @@ aside{
 
 /*---------------- DESKTOP STYLES --------------------*/
 
- @media only screen and (min-width: 1200px) {
+ @media only screen and (min-width:1200px) {
   /* Desktop styles here */
 
  /*---------- GENERAL STYLES ----------------*/
@@ -638,6 +763,19 @@ aside{
   margin: 100px 0;
  }
 
+ h2{
+   font-size: 2.25em;
+ }
+
+ h3, h4{
+   font-size: 1.875em;
+ }
+
+ p{
+   font-size: 1.125em;
+   line-height: 1.333;
+ }
+
  /*===========================================
              HOMEPAGE
  ============================================*/
@@ -645,7 +783,9 @@ aside{
  /*---------- HERO -------------------------*/
  
  .hero-area h1{
+   font-size: 3.75em;
    width: 69%;
+
  }
 
  aside .content-wrapper .form-description,
@@ -687,6 +827,7 @@ aside{
 
 .mission-content h2{
   width: 92%;
+  font-size: 3em;
 }
 
 .mission-content p{
@@ -696,17 +837,14 @@ aside{
 /*-------------- CONTACT -------------------*/
 
 .contact-section .content-wrapper h2{
-  width: 97%;
+  width: 95%;
+  font-size: 3em;
 }
 
 .contact-content{
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.contact-section .content-wrapper .contact-content div{
-  flex-basis: 320px;
-}
-}
 
 /*=============================================
              FAQ PAGE
@@ -715,12 +853,12 @@ aside{
 /*--------- FAQ --------------------------------*/
 
 .faq h2{
+  font-size: 3em;
   width: 100%;
 }
 
-.faq .faq-content{
-  flex-basis: 431px;
-}
+ }
+
 
 
 
