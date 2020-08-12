@@ -464,7 +464,7 @@ address{
 
 .faq h2{
   font-weight: normal;
-  line-height: 1;            /* make note on how to work out line height, put it in global styles if applicable. */ 
+  line-height: 1;            
   margin-bottom: 40px; 
 }
 
@@ -472,8 +472,6 @@ address{
   line-height: 1.333;
   margin-bottom: 0;
 }
-
-/*---- line height in body of global styles then specific later */
 
 
 /* ==========================================================================
