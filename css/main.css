@@ -136,15 +136,16 @@ h3, h4{
 
 p{
  font-size: 0.875em; 
+ line-height: 1.285;
  color: #e2e3ed;            
 }
 
-img{            /*------ Skillcrush added this ---------*/
-
+img{    
+  width: 100%;        
 }
 
-figure{         /*------ Skillcrush added this --------*/
-
+figure{         
+  margin: 0;
 }
 
 address{
@@ -176,6 +177,16 @@ header{
   padding: 15px 0; 
   background-color: #202322;
 }
+
+header figure{
+  width: 61%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+ 
+
 
 header .content-wrapper{
   display: flex;
@@ -277,11 +288,17 @@ footer .contact p{
 
 /*--------------------------------- MOBILE STYLES - HOMEPAGE ----------------------------*/
 
-
+Push changes to github
+notes--- 
+resizing figure img in device sizes the same as h1 etc
+notes on putting img in figure tag. copy from SC ::-webkit-progress-value
 
 /*-- HERO AREA ---*/
 
 .hero-area{
+  background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -337,10 +354,13 @@ aside{
 /*-- FEATURES --*/
 
 .features{
+  background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 
 .features article{
   width: 54%;             /* Solution is width: 63%; */
@@ -609,6 +629,10 @@ address{
     
   }
 
+  header figure{
+    width: 29%;
+  }
+
   header nav{
     width: 30%; /*--- Skillcrush solution is width: 20% keep an eye out in upcoming solution --*/
 
@@ -623,6 +647,10 @@ address{
   }
 
   /*------------ HERO AREA -------------*/
+
+  .hero-area{
+    min-height: 600px;
+  }
 
   .hero-area h1{
     font-size: 3em;
@@ -660,13 +688,27 @@ address{
 
   /*------------- REVIEWS ----------------*/
 
+  .reviews figure{
+    width: 49%;
+  }
+
   .reviews article{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviews h2{
+    width: 82%;
+  }
+
+  .reviews h3{
+    width: 75%;
   }
 
   .reviews article div{
     width: 49%;
+    padding-bottom: 29px;
   }
 
   /*------------- FOOTER -----------------*/
@@ -778,6 +820,9 @@ address{
              HOMEPAGE
  ============================================*/
  
+ header figure{
+   width: 30%;
+ }
  /*---------- HERO -------------------------*/
  
  .hero-area h1{
@@ -811,7 +856,12 @@ address{
  /*----------- REVIEWS ---------------------*/
 
  .reviews article div{
-   width: 44%;
+   width: 42%;
+   padding-bottom: 75px;
+ }
+
+ .reviews h2{
+   padding-bottom: 50px;
  }
 
 
