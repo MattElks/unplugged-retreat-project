@@ -213,7 +213,7 @@ header nav{
 
 header nav ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
@@ -311,6 +311,7 @@ footer .contact p{
   font-size: 2.25em;
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
+  margin-top: 0px;
 }
 
 /*-- ASIDE --*/
@@ -632,8 +633,12 @@ address{
   }
 
   h3{
-    font-size: 1.5em;
+    font-size: 0.875em;       
     line-height: 1.25;
+  }
+
+  footer h3{
+    font-size: 1.5em;
   }
 
 
@@ -694,6 +699,14 @@ address{
     margin: 0%;
   }
 
+  .form-description h3{
+    font-size: 1.5em;
+  }
+
+  .form h3{
+    font-size: 1.5em;
+  }
+
   /*------------- FEATURES --------------*/
 
   .features article{
@@ -722,10 +735,12 @@ address{
 
   .reviews h2{
     width: 82%;
+    margin-bottom: 0;
   }
 
   .reviews h3{
     width: 75%;
+    font-size: 1.5em;
   }
 
   .reviews article div{
@@ -775,6 +790,11 @@ address{
 
 }
 
+.mission-content h2{
+  width: 95%;
+}
+
+
 .mission-content p{
   width: 42%;
 }
@@ -806,6 +826,10 @@ address{
 
 .contact-section .content-wrapper h2{
   width:79%;
+}
+
+.contact-content h3{
+  font-size: 1.5em;
 }
 
 
@@ -852,7 +876,11 @@ address{
    font-size: 2.25em;
  }
 
- h3, h4{
+ h3{
+   font-size: 1.125em;
+ }
+
+ h4{
    font-size: 1.875em;
  }
 
@@ -861,32 +889,48 @@ address{
    line-height: 1.333;
  }
 
+ footer h3{
+   font-size: 1.875em;
+ }
+
  /*===========================================
              HOMEPAGE
  ============================================*/
  
  header figure{
-   width: 30%;
+   width: 37%;
  }
  /*---------- HERO -------------------------*/
  
  .hero-area h1{
    font-size: 3.75em;
-   width: 69%;
+   width: 70%;
 
  }
+
+ /*---------- ASIDE ------------------------*/
+
+ aside .content-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
 
  aside .content-wrapper .form-description,
  aside .content-wrapper .form{
    width: 33%;
  }
- /*---------- ASIDE ------------------------*/
 
- aside .content-wrapper{
-   display: flex;
-   justify-content: space-around;
+ .form-description h3{
+   font-size: 1.875em;
  }
 
+ .form h3{
+   font-size: 1.875em;
+ }
+
+ input[type=button]{
+   font-size: 1.5em;
+ }
  /*----------- FEATURES --------------------*/
 
  .features h2{
@@ -900,6 +944,9 @@ address{
 
  /*----------- REVIEWS ---------------------*/
 
+ .reviews article{
+   justify-content: space-around;
+ }
  .reviews article div{
    width: 42%;
    padding-bottom: 75px;
@@ -907,6 +954,15 @@ address{
 
  .reviews h2{
    padding-bottom: 50px;
+ }
+
+ .reviews h3{
+   font-size: 1.875em;
+   margin-bottom: 0;
+ }
+
+ .reviews p{
+   margin-top: 10px;
  }
 
 
@@ -946,8 +1002,12 @@ address{
 /*-------------- CONTACT -------------------*/
 
 .contact-section .content-wrapper h2{
-  width: 95%;
+  width: 96%;
   font-size: 3em;
+}
+
+.contact-content h3{
+  font-size: 1.875em;
 }
 
 .contact-content{
